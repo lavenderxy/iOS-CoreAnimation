@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller2-->
         <scene sceneID="BQU-I8-5ud">
             <objects>
-                <viewController id="6lM-tB-lsy" sceneMemberID="viewController">
+                <viewController id="6lM-tB-lsy" customClass="ViewController2" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1Ut-An-FYb"/>
                         <viewControllerLayoutGuide type="bottom" id="Hqa-GP-0EW"/>
@@ -16,9 +16,41 @@
                     <view key="view" contentMode="scaleToFill" id="OBc-5n-LTO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H1I-NT-Oij">
+                                <rect key="frame" x="14" y="61" width="292" height="384"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2.pic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7pE-t4-zjm">
+                                        <rect key="frame" x="0.0" y="0.0" width="292" height="384"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1.pic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CrM-Q3-GyP">
+                                        <rect key="frame" x="0.0" y="0.0" width="292" height="384"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jki-Ll-n62">
+                                <rect key="frame" x="20" y="481" width="78" height="30"/>
+                                <state key="normal" title="Animation3"/>
+                                <connections>
+                                    <action selector="animation3:" destination="6lM-tB-lsy" eventType="touchUpInside" id="liQ-oN-Q2i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9e-YP-pZh">
+                                <rect key="frame" x="229" y="481" width="78" height="30"/>
+                                <state key="normal" title="Animation4"/>
+                                <connections>
+                                    <action selector="ainmation4:" destination="6lM-tB-lsy" eventType="touchUpInside" id="uSB-4g-GGm"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="downloads" id="UWH-Vg-fvp"/>
+                    <connections>
+                        <outlet property="containView" destination="H1I-NT-Oij" id="GnS-yG-klT"/>
+                        <outlet property="imageView" destination="CrM-Q3-GyP" id="agH-WJ-trI"/>
+                        <outlet property="imageView1" destination="7pE-t4-zjm" id="0hT-lH-sfu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4uC-ao-n81" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -134,6 +166,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1.pic.jpg" width="720" height="1280"/>
         <image name="2.pic.jpg" width="720" height="1280"/>
     </resources>
 </document>
