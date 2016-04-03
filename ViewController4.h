@@ -12,5 +12,6 @@
 
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
 @property (strong, nonatomic) IBOutlet UIButton *animate6;
+@property (strong, nonatomic) IBOutlet UIImageView *imageView1;
 
 @end

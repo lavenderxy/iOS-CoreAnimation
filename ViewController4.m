@@ -14,11 +14,13 @@
 
 @implementation ViewController4
 
-@synthesize imageView,animate6;
+@synthesize imageView,animate6,imageView1;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    imageView.hidden = NO;
+    imageView1.hidden = YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -27,6 +29,8 @@
 }
 
 - (IBAction)animate7:(id)sender {
+    imageView.hidden = NO;
+    imageView1.hidden = YES;
     imageView.center = self.view.center;
     imageView.transform = CGAffineTransformMakeScale(0.2, 0.2);
     imageView.alpha = 0.0;
@@ -53,6 +57,43 @@
 }
 
 - (IBAction)animate8:(id)sender {
+    imageView1.hidden = NO;
+    imageView.hidden = YES;
+    imageView1.center = self.view.center;
+    CABasicAnimation *layerAnimation = [CABasicAnimation animationWithKeyPath:@"transform"];
+    layerAnimation.duration = 2.0;
+    layerAnimation.timingFunction = [CAMediaTimingFunction
+                                     functionWithName:kCAMediaTimingFunctionLinear];
+    layerAnimation.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI, 1, 1, 1)];
+    layerAnimation.removedOnCompletion = NO;
+    layerAnimation.fillMode = kCAFillModeForwards;
+    [imageView1.layer addAnimation:layerAnimation forKey:@"layerAnimation"];
+    [UIView animateWithDuration:2.0
+                     animations:^{
+                         imageView1.alpha = 0.2;
+                     } completion:^(BOOL finished) {
+                         imageView1.alpha = 1.0;
+//                         imageView1.center = self.view.center;
+//                         
+//                         CABasicAnimation *layerAnimation1 = [CABasicAnimation animationWithKeyPath:@"transform"];
+//                         layerAnimation1.duration = 1.0;
+//                         layerAnimation1.timingFunction = [CAMediaTimingFunction
+//                                                          functionWithName:kCAMediaTimingFunctionLinear];
+//                         layerAnimation1.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(-M_PI, 1, 1, 1)];
+//                         layerAnimation1.removedOnCompletion = NO;
+//                         layerAnimation1.fillMode = kCAFillModeBackwards;
+//                         [imageView1.layer addAnimation:layerAnimation1 forKey:@"layerAnimation"];
+                         
+                         
+//                         [UIView transitionFromView:imageView1
+//                                             toView:imageView1
+//                                           duration:1.0
+//                                            options:UIViewAnimationOptionTransitionCurlUp
+//                                         completion:^(BOOL finished) {
+////                                             imageView1=nil;
+//                                         }];
+                     }];
+    
 }
 
 /*

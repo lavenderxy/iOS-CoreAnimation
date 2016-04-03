@@ -256,17 +256,24 @@
                                     <action selector="animate8:" destination="I4Q-mA-wJT" eventType="touchUpInside" id="Uwb-B9-bFe"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.pic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="T6M-UK-Z5F">
+                                <rect key="frame" x="32" y="86" width="256" height="307"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="tJk-fM-tXo" secondAttribute="trailing" constant="20" id="1Cc-sP-dOV"/>
                             <constraint firstItem="ZlH-V7-N6G" firstAttribute="top" secondItem="CEE-Zt-4RE" secondAttribute="bottom" constant="14" id="2Ah-5D-xSQ"/>
                             <constraint firstItem="ZlH-V7-N6G" firstAttribute="top" secondItem="b2D-C7-qNu" secondAttribute="bottom" constant="14" id="Jvs-g3-tyE"/>
+                            <constraint firstItem="T6M-UK-Z5F" firstAttribute="leading" secondItem="rEt-wz-jT1" secondAttribute="leadingMargin" constant="16" id="UCG-lJ-3SF"/>
                             <constraint firstItem="tJk-fM-tXo" firstAttribute="top" secondItem="4ZO-lf-9YM" secondAttribute="bottom" constant="66" id="Xrt-QL-VZU"/>
                             <constraint firstItem="tJk-fM-tXo" firstAttribute="leading" secondItem="rEt-wz-jT1" secondAttribute="leadingMargin" constant="20" id="drB-1m-qsy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="T6M-UK-Z5F" secondAttribute="trailing" constant="16" id="icZ-Bn-pwk"/>
                             <constraint firstItem="b2D-C7-qNu" firstAttribute="top" secondItem="tJk-fM-tXo" secondAttribute="bottom" constant="82" id="kZy-v8-NC3"/>
                             <constraint firstItem="CEE-Zt-4RE" firstAttribute="top" secondItem="tJk-fM-tXo" secondAttribute="bottom" constant="82" id="nhU-Na-XYW"/>
+                            <constraint firstItem="T6M-UK-Z5F" firstAttribute="top" secondItem="4ZO-lf-9YM" secondAttribute="bottom" constant="66" id="nlE-cV-gdB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CEE-Zt-4RE" secondAttribute="trailing" constant="6" id="rg9-Cl-cIh"/>
+                            <constraint firstItem="CEE-Zt-4RE" firstAttribute="top" secondItem="T6M-UK-Z5F" secondAttribute="bottom" constant="82" id="ube-gh-DrY"/>
                             <constraint firstItem="ZlH-V7-N6G" firstAttribute="top" secondItem="tJk-fM-tXo" secondAttribute="bottom" constant="126" id="vIb-Hr-KF7"/>
                             <constraint firstItem="b2D-C7-qNu" firstAttribute="leading" secondItem="rEt-wz-jT1" secondAttribute="leadingMargin" constant="-1" id="w3T-Y4-oyP"/>
                         </constraints>
@@ -275,6 +282,7 @@
                     <connections>
                         <outlet property="animate6" destination="b2D-C7-qNu" id="Mkm-6P-8k4"/>
                         <outlet property="imageView" destination="tJk-fM-tXo" id="LeC-kl-lh3"/>
+                        <outlet property="imageView1" destination="T6M-UK-Z5F" id="iub-Ek-w2e"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9xG-hg-Qjz" userLabel="First Responder" sceneMemberID="firstResponder"/>
