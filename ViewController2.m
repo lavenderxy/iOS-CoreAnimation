@@ -45,9 +45,19 @@
         
         }];
     
-    
 }
 - (IBAction)ainmation4:(id)sender {
+    [UIView transitionWithView:self.view
+                      duration:1.0
+                       options:UIViewAnimationOptionTransitionCurlUp
+                    animations:^{
+                        imageView.hidden = !imageView.hidden;
+                        imageView1.hidden = !imageView1.hidden;
+                    }
+                    completion:^(BOOL finished) {
+                        
+                    }];
+    
 }
 
 /*

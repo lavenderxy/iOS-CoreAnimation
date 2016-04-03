@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller2-->
@@ -110,6 +111,8 @@
                         <segue destination="tIb-1m-sRp" kind="relationship" relationship="viewControllers" id="Yc5-MG-oAr"/>
                         <segue destination="6lM-tB-lsy" kind="relationship" relationship="viewControllers" id="wuE-F6-Y2d"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="C9e-Gw-x7s"/>
+                        <segue destination="E1T-ZZ-iXF" kind="relationship" relationship="viewControllers" id="Czl-Ag-CTG"/>
+                        <segue destination="I4Q-mA-wJT" kind="relationship" relationship="viewControllers" id="ihx-XT-R3N"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HJS-mw-0Hf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -163,6 +166,120 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="238" y="660"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="ZjO-tD-Zqm">
+            <objects>
+                <viewController id="E1T-ZZ-iXF" customClass="ViewController3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OkI-2Q-MF8"/>
+                        <viewControllerLayoutGuide type="bottom" id="cY7-9U-g8o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8wf-e3-qsc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.pic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cuw-wp-OtF">
+                                <rect key="frame" x="-4" y="81" width="328" height="348"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.pic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="EY0-LQ-Zug">
+                                <rect key="frame" x="-4" y="81" width="328" height="348"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBR-0W-zwF">
+                                <rect key="frame" x="123" y="474" width="74" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="aiu-hs-got"/>
+                                </constraints>
+                                <state key="normal" title="Animate6"/>
+                                <connections>
+                                    <action selector="animate6:" destination="E1T-ZZ-iXF" eventType="touchUpInside" id="9ym-7j-0jt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cuw-wp-OtF" firstAttribute="leading" secondItem="8wf-e3-qsc" secondAttribute="leadingMargin" constant="-20" id="5FR-dh-cSu"/>
+                            <constraint firstItem="cY7-9U-g8o" firstAttribute="top" secondItem="bBR-0W-zwF" secondAttribute="bottom" constant="15" id="7iz-md-Sar"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cuw-wp-OtF" secondAttribute="trailing" constant="-20" id="Fnm-Q3-yqC"/>
+                            <constraint firstItem="cuw-wp-OtF" firstAttribute="top" secondItem="OkI-2Q-MF8" secondAttribute="bottom" constant="61" id="J1o-wK-WRh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bBR-0W-zwF" secondAttribute="trailing" constant="107" id="KJR-Ic-6LO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EY0-LQ-Zug" secondAttribute="trailing" constant="-20" id="PlX-7C-CLM"/>
+                            <constraint firstItem="EY0-LQ-Zug" firstAttribute="leading" secondItem="8wf-e3-qsc" secondAttribute="leadingMargin" constant="-20" id="TdC-gk-Qfy"/>
+                            <constraint firstItem="bBR-0W-zwF" firstAttribute="top" secondItem="EY0-LQ-Zug" secondAttribute="bottom" constant="45" id="XNu-5u-JG2"/>
+                            <constraint firstItem="EY0-LQ-Zug" firstAttribute="top" secondItem="OkI-2Q-MF8" secondAttribute="bottom" constant="61" id="jWT-aW-2IW"/>
+                            <constraint firstItem="bBR-0W-zwF" firstAttribute="top" secondItem="cuw-wp-OtF" secondAttribute="bottom" constant="45" id="n74-dS-85M"/>
+                            <constraint firstItem="bBR-0W-zwF" firstAttribute="leading" secondItem="8wf-e3-qsc" secondAttribute="leadingMargin" constant="107" id="o2S-TC-Cec"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="topRated" id="QoK-Us-oij"/>
+                    <connections>
+                        <outlet property="imageView" destination="EY0-LQ-Zug" id="Sgb-un-vlc"/>
+                        <outlet property="imageView1" destination="cuw-wp-OtF" id="rF5-DF-gvR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C0N-lS-F8l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="238" y="1318"/>
+        </scene>
+        <!--View Controller4-->
+        <scene sceneID="NrX-ha-ytK">
+            <objects>
+                <viewController id="I4Q-mA-wJT" customClass="ViewController4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4ZO-lf-9YM"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZlH-V7-N6G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rEt-wz-jT1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.pic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="tJk-fM-tXo">
+                                <rect key="frame" x="36" y="86" width="248" height="307"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2D-C7-qNu">
+                                <rect key="frame" x="15" y="475" width="65" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="JVh-v7-HBv"/>
+                                </constraints>
+                                <state key="normal" title="Animate7"/>
+                                <connections>
+                                    <action selector="animate7:" destination="I4Q-mA-wJT" eventType="touchUpInside" id="Epf-CI-YRS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CEE-Zt-4RE">
+                                <rect key="frame" x="232" y="475" width="66" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="XPc-bY-Slg"/>
+                                </constraints>
+                                <state key="normal" title="Animate8"/>
+                                <connections>
+                                    <action selector="animate8:" destination="I4Q-mA-wJT" eventType="touchUpInside" id="Uwb-B9-bFe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="tJk-fM-tXo" secondAttribute="trailing" constant="20" id="1Cc-sP-dOV"/>
+                            <constraint firstItem="ZlH-V7-N6G" firstAttribute="top" secondItem="CEE-Zt-4RE" secondAttribute="bottom" constant="14" id="2Ah-5D-xSQ"/>
+                            <constraint firstItem="ZlH-V7-N6G" firstAttribute="top" secondItem="b2D-C7-qNu" secondAttribute="bottom" constant="14" id="Jvs-g3-tyE"/>
+                            <constraint firstItem="tJk-fM-tXo" firstAttribute="top" secondItem="4ZO-lf-9YM" secondAttribute="bottom" constant="66" id="Xrt-QL-VZU"/>
+                            <constraint firstItem="tJk-fM-tXo" firstAttribute="leading" secondItem="rEt-wz-jT1" secondAttribute="leadingMargin" constant="20" id="drB-1m-qsy"/>
+                            <constraint firstItem="b2D-C7-qNu" firstAttribute="top" secondItem="tJk-fM-tXo" secondAttribute="bottom" constant="82" id="kZy-v8-NC3"/>
+                            <constraint firstItem="CEE-Zt-4RE" firstAttribute="top" secondItem="tJk-fM-tXo" secondAttribute="bottom" constant="82" id="nhU-Na-XYW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CEE-Zt-4RE" secondAttribute="trailing" constant="6" id="rg9-Cl-cIh"/>
+                            <constraint firstItem="ZlH-V7-N6G" firstAttribute="top" secondItem="tJk-fM-tXo" secondAttribute="bottom" constant="126" id="vIb-Hr-KF7"/>
+                            <constraint firstItem="b2D-C7-qNu" firstAttribute="leading" secondItem="rEt-wz-jT1" secondAttribute="leadingMargin" constant="-1" id="w3T-Y4-oyP"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="E3u-XJ-7sk"/>
+                    <connections>
+                        <outlet property="animate6" destination="b2D-C7-qNu" id="Mkm-6P-8k4"/>
+                        <outlet property="imageView" destination="tJk-fM-tXo" id="LeC-kl-lh3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9xG-hg-Qjz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="236" y="1943"/>
         </scene>
     </scenes>
     <resources>
