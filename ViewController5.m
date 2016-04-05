@@ -51,6 +51,10 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (IBAction)snap:(id)sender {
+    [self reset];
+    UISnapBehavior *snapbehavior = [[UISnapBehavior alloc] initWithItem:imageView snapToPoint:self.view.center];
+    snapbehavior.damping = 0.65;   //动画结束时的震荡值
+    [self.animator addBehavior:snapbehavior];
 }
 
 - (IBAction)Collision:(id)sender {
