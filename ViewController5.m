@@ -91,6 +91,15 @@
     [self.animator addBehavior:gravityBehavior];
 }
 - (IBAction)push:(id)sender {
+    [self reset];
+    UIPushBehavior *push = [[UIPushBehavior alloc] initWithItems:@[imageView] mode:UIPushBehaviorModeInstantaneous];
+    push.pushDirection = CGVectorMake(45, 0);
+    push.magnitude = 1.0;
+    UIDynamicItemBehavior *itemBehavior = [[UIDynamicItemBehavior alloc] initWithItems:@[imageView]];
+    itemBehavior.resistance = 0.8;
+    [self.animator addBehavior:itemBehavior];
+    [self.animator addBehavior:push];
+    
 }
 
 /*
