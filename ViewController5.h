@@ -10,5 +10,7 @@
 
 @interface ViewController5 : UIViewController
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (strong, nonatomic) IBOutlet UIButton *collision;
+@property (strong, nonatomic) IBOutlet UIButton *snapBtn;
 
 @end

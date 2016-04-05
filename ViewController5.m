@@ -23,7 +23,7 @@
 
 @implementation ViewController5
 
-@synthesize imageView;
+@synthesize imageView,collision,snapBtn;
 
 -(UIDynamicAnimator *)animator{
     if (!_animator) {
@@ -54,6 +54,19 @@
 }
 
 - (IBAction)Collision:(id)sender {
+    [self reset];
+    UIGravityBehavior *gravityBehavior = [[UIGravityBehavior alloc] init];
+    [gravityBehavior addItem:imageView];
+    UIDynamicItemBehavior *itemBehavior = [[UIDynamicItemBehavior alloc] init];
+    itemBehavior.resistance = 0.2;
+    UICollisionBehavior *collistionBehavior = [[UICollisionBehavior alloc] init];
+    [collistionBehavior addItem:imageView];
+    collistionBehavior.translatesReferenceBoundsIntoBoundary = YES;
+    [collistionBehavior addBoundaryWithIdentifier:@"Button" forPath:[UIBezierPath bezierPathWithRect:snapBtn.frame]];
+    [self.animator addBehavior:collistionBehavior];
+    [self.animator addBehavior:itemBehavior];
+    [self.animator addBehavior:gravityBehavior];
+    
 }
 
 - (IBAction)gravity:(id)sender {

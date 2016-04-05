@@ -324,50 +324,84 @@
                                     <action selector="back:" destination="lxp-eD-dwG" eventType="touchUpInside" id="zuu-v9-0Ih"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knn-oV-yb5">
-                                <rect key="frame" x="14" y="498" width="35" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knn-oV-yb5">
+                                <rect key="frame" x="11" y="536" width="35" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="12i-43-VdG"/>
+                                    <constraint firstAttribute="width" constant="35" id="ZTq-Rq-ona"/>
+                                </constraints>
                                 <state key="normal" title="Snap"/>
                                 <connections>
                                     <action selector="snap:" destination="lxp-eD-dwG" eventType="touchUpInside" id="EfP-bG-m5h"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zu4-T0-mWZ">
-                                <rect key="frame" x="65" y="498" width="58" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zu4-T0-mWZ">
+                                <rect key="frame" x="70" y="536" width="58" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="isN-oP-Sdp"/>
+                                    <constraint firstAttribute="height" constant="30" id="tIh-wF-Zj5"/>
+                                </constraints>
                                 <state key="normal" title="Collision"/>
                                 <connections>
                                     <action selector="Collision:" destination="lxp-eD-dwG" eventType="touchUpInside" id="tkr-Uq-XyQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtO-KD-Fve">
-                                <rect key="frame" x="136" y="498" width="49" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtO-KD-Fve">
+                                <rect key="frame" x="147" y="536" width="49" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="blE-Kb-heI"/>
+                                    <constraint firstAttribute="width" constant="49" id="t44-mK-LoJ"/>
+                                </constraints>
                                 <state key="normal" title="Gravity"/>
                                 <connections>
                                     <action selector="gravity:" destination="lxp-eD-dwG" eventType="touchUpInside" id="ylf-FX-PN7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pst-gX-aQ3">
-                                <rect key="frame" x="204" y="498" width="45" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pst-gX-aQ3">
+                                <rect key="frame" x="212" y="536" width="45" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="1o9-44-mdT"/>
+                                    <constraint firstAttribute="height" constant="30" id="lRT-4n-wrG"/>
+                                </constraints>
                                 <state key="normal" title="Attach"/>
                                 <connections>
                                     <action selector="attach:" destination="lxp-eD-dwG" eventType="touchUpInside" id="htI-1R-3YC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuj-2A-GIv">
-                                <rect key="frame" x="260" y="498" width="35" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1.pic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4Eq-1I-DFe">
+                                <rect key="frame" x="42" y="84" width="118" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zuj-2A-GIv">
+                                <rect key="frame" x="272" y="536" width="35" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="J0E-TJ-2Zg"/>
+                                    <constraint firstAttribute="height" constant="30" id="fiq-kS-EAh"/>
+                                </constraints>
                                 <state key="normal" title="Push"/>
                                 <connections>
                                     <action selector="push:" destination="lxp-eD-dwG" eventType="touchUpInside" id="kZj-fP-Ild"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1.pic.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4Eq-1I-DFe">
-                                <rect key="frame" x="42" y="84" width="118" height="128"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="AlR-Uu-y3D" firstAttribute="top" secondItem="pst-gX-aQ3" secondAttribute="bottom" constant="2" id="2o5-L6-bWH"/>
+                            <constraint firstItem="Zu4-T0-mWZ" firstAttribute="leading" secondItem="knn-oV-yb5" secondAttribute="trailing" constant="24" id="8X8-do-Gim"/>
+                            <constraint firstItem="knn-oV-yb5" firstAttribute="leading" secondItem="Qk1-p4-4eM" secondAttribute="leadingMargin" constant="-5" id="Bzt-WI-3Nt"/>
+                            <constraint firstItem="GtO-KD-Fve" firstAttribute="leading" secondItem="Zu4-T0-mWZ" secondAttribute="trailing" constant="19" id="Euw-Bg-cxt"/>
+                            <constraint firstItem="AlR-Uu-y3D" firstAttribute="top" secondItem="zuj-2A-GIv" secondAttribute="bottom" constant="2" id="Fzq-82-8Xe"/>
+                            <constraint firstItem="AlR-Uu-y3D" firstAttribute="top" secondItem="GtO-KD-Fve" secondAttribute="bottom" constant="2" id="GPw-vM-HD4"/>
+                            <constraint firstItem="AlR-Uu-y3D" firstAttribute="top" secondItem="Zu4-T0-mWZ" secondAttribute="bottom" constant="2" id="Get-eq-cQK"/>
+                            <constraint firstItem="pst-gX-aQ3" firstAttribute="leading" secondItem="GtO-KD-Fve" secondAttribute="trailing" constant="16" id="Z7L-KQ-Lg7"/>
+                            <constraint firstItem="AlR-Uu-y3D" firstAttribute="top" secondItem="knn-oV-yb5" secondAttribute="bottom" constant="2" id="nHN-1H-goy"/>
+                            <constraint firstItem="zuj-2A-GIv" firstAttribute="leading" secondItem="pst-gX-aQ3" secondAttribute="trailing" constant="15" id="pPZ-EV-dED"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dD0-0B-DIg"/>
                     <connections>
+                        <outlet property="collision" destination="Zu4-T0-mWZ" id="Smc-Or-jG4"/>
                         <outlet property="imageView" destination="4Eq-1I-DFe" id="FPb-xI-TG7"/>
+                        <outlet property="snapBtn" destination="knn-oV-yb5" id="8cY-rC-FSw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zBx-w9-TE7" userLabel="First Responder" sceneMemberID="firstResponder"/>
